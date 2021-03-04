@@ -7,13 +7,20 @@
     <link href="{% static 'menu/style.css' %}" rel="stylesheet">
 </head>
 <body>
+    <img id="logo" src="{% static 'menu/images/small_logo.png' %}">
+<div class="title">
     <h1>Pizzas : </h1>
-    <ul>
+</div>
+    <div class="menu_list">
         {% for pizza in pizzas %}
-            <li>{{ pizza.name }} : {{ pizza.price }} $</li>
+            <div class="list_item">
+                <span class="list_title">{{ pizza.name }} :</span>
+                <span class="list_price">{{ pizza.price | floatformat:2 }} $</span>
+                <span class="list_ingredients">{{ pizza.ingredients }}</span>
+            </div>
         {% empty %}
-            <li>Sorry, no avalaible pizzas</li>
+            <div>Sorry, no avalaible pizzas</div>
         {% endfor %}
-    </ul>
+    </div>
 </body>
 </html>
