@@ -17,6 +17,9 @@
                 <span class="list_title">{{ pizza.name }} :</span>
                 <span class="list_price">{{ pizza.price | floatformat:2 }} $</span>
                 <span class="list_ingredients">{{ pizza.ingredients }}</span>
+                {% if pizza.veggy %}
+                    <span class="list_veggy"> VeggyZza </span>
+                {% endif %}
             </div>
         {% empty %}
             <div>Sorry, no avalaible pizzas</div>

@@ -36,11 +36,15 @@ h1 {
 .list_title{
     font-weight: bold;
     font-size: 20px;
+    display: inline-block;
+    width: 350px;
 }
 
 .list_price{
     font-size: 20px;
     color: #DD7835;
+    display: inline-block;
+    width: 70px;
     margin-left: 8px;
 }
 
@@ -49,4 +53,12 @@ h1 {
     color: #C8C8C8;
     margin-top: 4px;
     display: block;
+}
+
+.list_veggy{
+font-weight: bold;
+    font-size: 12px;
+    color: #00FF00;
+    margin-top: 4px;
+    display: inline-block;
 }
