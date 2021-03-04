@@ -7,7 +7,10 @@
     <link href="{% static 'menu/style.css' %}" rel="stylesheet">
 </head>
 <body>
-    <img id="logo" src="{% static 'menu/images/small_logo.png' %}">
+    <a href="{% url 'main:index' %}">
+        <img id="logo" src="{% static 'menu/images/small_logo.png' %}">
+    </a>
+
 <div class="title">
     <h1>Pizzas : </h1>
 </div>
