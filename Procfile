@@ -1,1 +1,1 @@
-web: gunicorn pizzamama.wsgi
+web: python main.py -i json-rpc
